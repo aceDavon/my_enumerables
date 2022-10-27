@@ -14,7 +14,6 @@ class MyList
 end
 
 tb = MyList.new(1, 2, 3, 4)
-tb.list
 
 tb.each { |num| puts num }
 # 1
@@ -33,6 +32,5 @@ tb.any? { |e| e == 2 } # => true
 tb.any? { |e| e == 5 } # => false
 
 # Test #filter method
-tb.filter(&:odd?) # => [1,3]
 
 tb.filter(&:even?) # => [2,4]
